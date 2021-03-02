@@ -1,0 +1,15 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css', type='text/css')
+  body
+    h1= text
+
+    each message in messages
+      div.message-box
+        p.text= message.text 
+        p.user= "sent by " + message.user 
+        p.date= "at " + message.added
+
+    a(href="new")
+      button.new= "Send new message"

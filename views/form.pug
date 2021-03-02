@@ -1,0 +1,18 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css', type='text/css')
+  body
+    h1= text
+    
+    
+    
+    form(method="POST" action="/" id="newmessage")
+        h2="Message"
+        textarea(placeholder="what you got to say?" required="true" name="text" form="newmessage" id="text").messagebox
+
+        h2="Your name"
+        input(name="user" type="text" placeholder="Maverick Dangerstorm" required="true").namebox
+
+        button(type="submit")= "Send message"
+        
